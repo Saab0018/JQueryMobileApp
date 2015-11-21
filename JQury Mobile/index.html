@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First jQuery Mobile App</title>
+    <link rel="stylesheet" href="themes/mytheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <script type="text/javascript" src="js/localStorage.js"></script>
+    
+    <meta name="viewport" content="width=device-width" , initial-scale=1 />
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <!-- Home page -->
+
+    <section id="home" data-role="page" data-theme="a">
+        <div data-role="panel" id="mypanel" data-display="overlay">
+            <p>If in desperate need of a beverage and on the go, you can find all these drinks at the following bars located in Ottawa.</p>
+            <a href="http://fatherandsonsottawa.com/" class="ui-btn">Father and Sons Restaurant</a>
+            <a href="http://thedraftpub.com/" class="ui-btn">The Draft Pub</a>
+            <p>For more info</p>
+            <a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+
+
+        </div>
+        <div data-role="header" data-theme="a">
+            <a href="#mypanel" class="ui-btn ui-icon-grid ui-btn-icon-notext"></a>
+
+
+
+            <h1>Make Drinks & Chill</h1>
+
+        </div>
+        <div class="ui-content"></div>
+        <img src="http://www.whatspoppinhouston.com/ngallery/fullsize/55a4e7f8cfc5b.jpg" alt="bar" height="auto" width="100%">Chillest Place on Earth!
+        <p>Welcome to Make Drinks & Chill. If you ever thought about going to Bartending school, think twice. I will turn you into a professional bartender. Here I will teach you how to make some of my favourit drink recipes that will guarantee your guests or customers asking for seconds. Go wild!!! </p>
+        <a href="#preview" class="ui-btn">Pina Colada</a>
+        <a href="#" class="ui-btn">Ceasar</a>
+        
+
+        <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <h2>Please drink responsibly!</h2>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Preview page for Pina Colada -->
+
+    <section id="preview" data-role="page" data-dialog="true" data-theme="a">
+        
+        <div data-role="header">
+            
+            <h1>Ingredient List</h1>
+
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>What you will need</h2>
+            <ul>
+                <li>White rum</li>
+                <li>Coconut cream</li>
+                <li>pinapple juice</li>
+                <li>crushed ice</li>
+                <li>pineapple slice</li>
+
+            </ul>
+        </div>
+
+        <div data-role="footer">
+
+            <a href="#firstdrink1" class="ui-btn ui-btn-top start">Start</a>
+        </div>
+          <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+         
+        </ul>
+      </div>
+        </div>
+    </section>
+
+    <!-- First Page of tutorial -->
+
+    <section id="firstdrink1" data-pageNumber="1" data-role="page" data-dialog="true">
+        <div data-role="header">
+            <a href="#preview" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext"></a>
+            <h1>1/6</h1>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>Chill it</h2>
+            <img src="http://pad1.whstatic.com/images/thumb/5/50/Make-a-Milkshake-Without-Ice-Cream-Step-11-Version-4.jpg/670px-Make-a-Milkshake-Without-Ice-Cream-Step-11-Version-4.jpg" alt="glass" height="auto" width="100%">
+            <p> Put 1 cup of ice in a blender.</p>
+            <a href="#" data-transition="flip" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-corner-all ui-btn-inline ui-btn-icon-notext ui-state-disabled backB ">back</a>
+            <a href="#firstdrink2" data-transition="flip" class="ui-btn ui-btn-icon-right ui-icon-arrow-r ui-corner-all ui-btn-inline ui-btn-icon-notext nextB">Next</a>
+        </div>
+        <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+         
+        </ul>
+      </div>
+        </div>
+    </section>
+
+    <!-- Second Page of tutorial -->
+
+    <section id="firstdrink2" data-pageNumber="2" data-role="page" data-dialog="true">
+        <div data-role="header">
+            <a href="#preview" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext"></a>
+            <h1>2/6</h1>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>Cream it</h2>
+            <p><img src="http://pad1.whstatic.com/images/thumb/8/8c/Make-a-Pina-Colada-Step-2.jpg/670px-Make-a-Pina-Colada-Step-2.jpg" height="auto" width="100%"></p>
+            <p> Add 1 oz. of coconut cream to the blender. This will add a hint of coconut to your tasty drink without overwhelming it. </p>
+            <a href="#firstdrink1" data-transition="flip" class="ui-btn ui-btn-icon-left ui-btn-inline ui-icon-arrow-l  ui-corner-all ui-btn-icon-notext backB">back</a>
+            <a href="#firstdrink3" data-transition="flip" class="ui-btn ui-btn-icon-right ui-btn-inline ui-icon-arrow-r ui-corner-all ui-btn-icon-notext nextB">Next</a>
+            <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+          
+        </ul>
+      </div>
+        </div>
+        </div>
+
+        <!-- Third Page of tutorial -->
+
+
+    </section>
+
+    <section id="firstdrink3" data-pageNumber="3" data-role="page" data-dialog="true">
+        <div data-role="header">
+            <a href="#preview" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext"></a>
+            <h1>3/6</h1>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>Spike It</h2>
+            <img src="http://pad3.whstatic.com/images/thumb/8/8d/Make-a-Pina-Colada-Step-3.jpg/670px-Make-a-Pina-Colada-Step-3.jpg" height="auto" width="100%">
+            <p> Add 2 oz. of white rum to the blender. This alcohol will give the piña colada the kick you're looking for. For a virgin piña colada, you can skip this step. </p>
+            <a href="#firstdrink2" data-transition="flip" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-corner-all ui-btn-inline ui-btn-icon-notext backB">back</a>
+            <a href="#firstdrink4" data-transition="flip" class="ui-btn ui-btn-icon-right ui-icon-arrow-r ui-corner-all ui-btn-inline ui-btn-icon-notext nextB">Next</a>
+            <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+          
+        </ul>
+      </div>
+        </div>
+
+        </div>
+
+
+        <!-- fourth page of pina colada -->
+    </section>
+
+    <section id="firstdrink4"  data-pageNumber="4" data-role="page" data-dialog="true">
+        <div data-role="header">
+            <a href="#preview" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext"></a>
+            <h1>4/6</h1>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>Give It Some Suga</h2>
+            <img src="http://pad3.whstatic.com/images/thumb/4/4e/Make-a-Pina-Colada-Step-4.jpg/670px-Make-a-Pina-Colada-Step-4.jpg" height="auto" width="100%">
+            <p> Add 3 oz. of pineapple juice to the blender. </p> 
+            <a href="#firstdrink3" data-transition="flip" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-corner-all ui-btn-inline ui-btn-icon-notext backB">back</a>
+            <a href="#firstdrink5" data-transition="flip" class="ui-btn ui-btn-icon-right ui-icon-arrow-r ui-corner-all ui-btn-inline ui-btn-icon-notext nextB">Next</a>
+            <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+        
+        </ul>
+      </div>
+        </div>
+
+
+        </div>
+
+        <!-- fifth page of pine colada -->
+    </section>
+
+    <section id="firstdrink5" data-pageNumber="4" data-role="page" data-dialog="true">
+        <div data-role="header">
+            <a href="#preview" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext"></a>
+            <h1>5/6</h1>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h2>Time For The Action</h2>
+            <img src="http://pad3.whstatic.com/images/thumb/b/b2/Make-a-Pina-Colada-Step-5.jpg/670px-Make-a-Pina-Colada-Step-5.jpg" height="auto" width="100%">
+            <p> Blend the ingredients together. Put the blender on medium and blend all of the ingredients together until they're incorporated. The piña colada should be smooth, sweet, and creamy.</p>
+            <a href="#firstdrink4" data-transition="flip" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-corner-all ui-btn-inline ui-btn-icon-notext backB">back</a>
+            <a href="#firstdrink6" data-transition="flip" class="ui-btn ui-btn-icon-right ui-icon-arrow-r ui-corner-all ui-btn-inline ui-btn-icon-notext nextB">Next</a>
+            <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+          
+        </ul>
+      </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- sixth page of pinecolada  -->
+
+    <section id="firstdrink6" data-pageNumber="6" data-role="page" data-dialog="true">
+        <div data-role="header">
+            <a href="#preview" class="ui-btn ui-icon-delete ui-corner-all ui-btn-icon-notext"></a>
+            <h1>6/6</h1>
+        </div>
+        <div data-role="content" class="ui-content">
+            <h3>The Finishing Move</h3>
+            <img src="http://pad3.whstatic.com/images/thumb/2/2b/Make-a-Pina-Colada-Step-7.jpg/670px-Make-a-Pina-Colada-Step-7.jpg" height="auto" width="100%">
+            <p> Garnish the drink by adding a slice of pineapple to the glass. You can also put a maraschino cherry into the drink. Enjoy this beverage on a hot summer's day -- or any time at all. </p>
+            <div data-role="collapsible-set" data-content-theme="d" id="set">
+                <div data-role="collapsible" id="set1" data-collapsed="true">
+                    <h3>Fun Fact</h3>
+                    <p>According to John Mariani's Encyclopedia of American Food & Drink, the words Pina Colada, which translate to “strained pineapple,” first appeared in print in 1923. But legends have Puerto Rican pirate Roberto Cofresí serving a mixture of rum, pineapple and coconut to his ship’s crew to help boost morale as far back as the 1800s.</p>
+                </div>
+            </div>
+            <a href="#firstdrink5" data-transition="flip" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-corner-all ui-btn-inline ui-btn-icon-notext backB">back</a>
+            <a href="#" data-transition="flip" class="ui-btn ui-btn-icon-right ui-icon-arrow-r ui-corner-all ui-btn-inline ui-btn-icon-notext ui-state-disabled nextB">Next</a>
+            <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+            <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+          </li>
+          <li><a href="#aboutMe" class="ui-btn" data-icon="info" data-iconpos="top">Info</a>
+          </li>
+          
+        </ul>
+      </div>
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section id="aboutMe" data-role="page" data-dialog="true">
+	 <div data-role="header">
+            <h1>About Me</h1>
+            
+        </div>
+        <div data-role="content" class="ui-content">
+           <p>Make Drinks & Chill</p>
+           <p>Created by: Matthew Saab</p>
+           <p>saab0018@algonquinCollege.com</p>
+           <img src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11224818_10153734653436979_7877276862736538897_n.jpg?oh=8cafcf0060e5875801c3954b64aef202&oe=56FA0804" height="auto" width="100%">
+
+        </div>
+        <div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a">
+
+           
+      </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
