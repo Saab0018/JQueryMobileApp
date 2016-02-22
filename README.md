@@ -10,6 +10,6 @@ This is a mobile application for alcohol beverage instructions created with JQue
 
 #Instructions
 
-Clone to desktop (Compatible on any operating system)
-Open with your favourit text editor
+* Clone to desktop (Compatible on any operating system)
+* Open with your favourit text editor
 
