@@ -12,4 +12,7 @@ This is a mobile application for alcohol beverage instructions created with JQue
 
 * Clone to desktop (Compatible on any operating system)
 * Open with your favourit text editor
+* Launch on browser
+* navigate through multiple pages
+* Enjoy the best beverages
 
