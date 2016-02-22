@@ -6,7 +6,7 @@ Matt Saab <mattsaab@gmail.com>
 
 #Description
 
-This is a mobile application for alcohol beverage instructions created with JQueryMobileApp. 
+This is a mobile application for alcohol beverage instructions created with JQueryMobileApp. There are only 2 drink tutorials so far but more to come..
 
 #Instructions
 
