@@ -1,5 +1,5 @@
 # JQueryMobileApp
 
-Developer: 
+#Developer: 
 
 Matt Saab<mattsaab@gmail.com>
